@@ -1,11 +1,15 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { MdOutlineProductionQuantityLimits, MdOutlineDescription, MdOutlineCategory } from 'react-icons/md'
 import { TbNumbers } from 'react-icons/tb'
 
 import './Create.css'
 
 const Create = () => {
+  const navigate = useNavigate()
+
+  const home = () => navigate('/')
+
   return (
     <div className='create-container'>
       <div className="form-container">
@@ -30,9 +34,9 @@ const Create = () => {
             <textarea type="text" placeholder='Item description' />
           </div>
           <div className="btn">
-            <button>Create</button>
+            <button className='create'>Create</button>
+            <button className='cancel' onClick={home}>Cancel</button>
           </div>
-        
         </form>
       </div>
     </div>

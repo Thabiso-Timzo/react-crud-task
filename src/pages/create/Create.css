@@ -57,10 +57,11 @@
     text-align: center;
 }
 
-.form-container form .btn button {
-    width: 60%;
+.form-container form .btn .create {
+    width: 30%;
     height: 5vh;
     background: rgb(0, 0, 80);
+    margin-right: 10px;
     color: white;
     border: none;
     outline: none;
@@ -70,8 +71,25 @@
     font-weight: 700;
 }
 
-.form-container form .btn button:hover {
+.form-container form .btn .cancel {
+    width: 30%;
+    height: 5vh;
+    background: rgb(255, 2, 2);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.form-container form .btn .create:hover {
     background:rgb(0, 0, 134);
+}
+
+.form-container form .btn .cancel:hover {
+    background: rgb(255, 59, 59);
 }
 
 @media only screen and (max-width: 768px) {
@@ -87,4 +105,9 @@
     .form-container form .form-group textarea {
         font-size: 12px;
     } 
+
+    .form-container form .btn .create,
+    .form-container form .btn .cancel {
+        font-size: 10px;
+    }
 }
