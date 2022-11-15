@@ -1,0 +1,55 @@
+.product-container {
+    display: block;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 48%;
+    height: 60vh;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.product-container .left {
+    float: left;
+    width: 75%;
+}
+
+.product-container .right {
+    float: right;
+    width: 20%;
+}
+
+.product-container .right .edit-btn {
+    margin-right: 10px;
+    width: 40%;
+    height: 5vh;
+    background: rgb(0, 0, 80);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.product-container .right .delete-btn {
+    width: 50%;
+    height: 5vh;
+    background: rgb(255, 2, 2);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.product-container .right .edit-btn:hover {
+    background:rgb(0, 0, 134);
+}
+
+.product-container .right .delete-btn:hover {
+    background: rgb(255, 74, 74);
+}
