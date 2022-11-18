@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
+import "react-toastify/dist/ReactToastify.css";
 
 import Home from './pages/home/Home';
 import Create from './pages/create/Create';
@@ -12,6 +14,7 @@ function App() {
         <Route path='/create' element={<Create />} />
         <Route path='/edit/:id' element={<Edit />} />
       </Routes>
+      <ToastContainer />
     </BrowserRouter>
   );
 }
