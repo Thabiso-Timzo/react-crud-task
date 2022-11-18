@@ -1,70 +1,145 @@
-# Getting Started with Create React App
+Below you will find some information on how to perform common tasks.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
 
-### `npm start`
+I'll take you through this project, It's a simple web application where you can ```Create, Read, Update, and Delete ``` contacts. However, when you refresh the web browser all data will be lost. Its a front-end application where I introduced Redux. I also included how to install the whole project and dependencies.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Folder Structure 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+``` 
+public\
+    favicon.ico
+    index.html
+    logo192.png
+    logo512.png
+    manifest.json
+    robots.txt
+src\
+    action\
+        contactAction.js
+    components\
+        contact\
+            Contact.css
+            Contact.jsx
+        header\
+            Header.css
+            Header.jsx
+    constant\
+        constantReducer.js
+    pages\
+        create\
+            Create.css
+            Create.jsx
+        edit\
+            Edit.css
+            edit.jsx
+        home\
+            Home.css
+            Home.jsx
+    reducers\
+        contactReducer.js
+    store\
+        store.js
+    utils\
+        validation\
+            validation.js
+    App.js
+    index.css
+    index.js
+.gitignore
+package.json
+package-lock.json
+README.md
+```
 
-### `npm test`
+## Installing the project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Make sure you have nodejs installed in your machine. Run this command `npx create-next-app <project-name>` in your terminal.
 
-### `npm run build`
+## Installing a Dependency
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The generated project includes React, React-Dom and React-scripts as dependencies. It also includes a set of scripts used by Create React App as a development dependency. You may install other dependencies with `npm` or `yarn`:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You can run the following command to install all the dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`npm install` or if you chose yarn then delete the package-lock.json file and run `yarn install`
 
-### `npm run eject`
+or 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+run the following commands to install each package
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+For react-redux run:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```sh
+npm install --save react-redux
+```
 
-## Learn More
+Alternatively you may use `yarn`:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```sh
+yarn add react-redux
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+For react-icons run:
 
-### Code Splitting
+```sh
+npm install --save react-icons
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Alternatively you may use `yarn`:
 
-### Analyzing the Bundle Size
+```sh
+yarn add react-icons
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+For react-toastify run:
 
-### Making a Progressive Web App
+```sh
+npm install --save react-toastify
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Alternatively you may use `yarn`:
 
-### Advanced Configuration
+```sh
+yarn add react-toastify
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+For redux run:
 
-### Deployment
+```sh
+npm install --save redux
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Alternatively you may use `yarn`:
 
-### `npm run build` fails to minify
+```sh
+yarn add redux
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For redux-devtools-extension run:
+
+```sh
+npm install --save redux-devtools-extension
+```
+
+Alternatively you may use `yarn`:
+
+```sh
+yarn add redux-devtools-extension
+```
+
+For redux-thunk run:
+
+```sh
+npm install --save redux-thunk
+```
+
+Alternatively you may use `yarn`:
+
+```sh
+yarn add redux-thunk
+```
