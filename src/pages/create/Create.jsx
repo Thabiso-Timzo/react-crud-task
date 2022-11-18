@@ -85,7 +85,8 @@ const Create = () => {
             <BsPersonFill className='icon' />
             <input 
               type="text" 
-              placeholder='full name'
+              name='name'
+              placeholder='name'
               value={name}
               onChange={(e) => setName(e.target.value)}
              />
@@ -93,7 +94,8 @@ const Create = () => {
           <div className='form-group'>
             <MdEmail className='icon' />
             <input 
-              type="text" 
+              type="text"
+              name='email' 
               placeholder='email address' 
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -103,6 +105,7 @@ const Create = () => {
             <MdPhone className='icon' />
             <input
               type="text" 
+              name='number'
               placeholder='phone number '
               value={number}
               onChange={(e) => setNumber(e.target.value)}
