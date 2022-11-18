@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Home.css'
 import Header from '../../components/header/Header'
-import Product from '../../components/product-list/Product'
+import Contact from '../../components/contact/Contact'
 
 const Home = () => {
   return (
@@ -11,7 +11,7 @@ const Home = () => {
       <div className="line">
         <hr />
       </div>
-      <Product />
+      <Contact />
     </>
   )
 }
