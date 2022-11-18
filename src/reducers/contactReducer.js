@@ -6,7 +6,7 @@ import {
 } from "../constant/constanReducer";
 
 const initialState = [
-  { id: 0, name: "Thabiso Hlatshwayo", email: "thabiso@email.com", phone: 1234567890 },
+  { id: 0, name: "Thabiso Hlatshwayo", email: "thabiso@email.com", number: 1234567890 },
 ];
   
 // contact reducer
