@@ -104,6 +104,7 @@ const Edit = () => {
                 <BsPersonFill className='icon' />
                 <input 
                   type="text" 
+                  name='name'
                   placeholder='full name'
                   value={name}
                   onChange={(e) => setName(e.target.value)}
@@ -113,6 +114,7 @@ const Edit = () => {
                 <MdEmail className='icon' />
                 <input 
                   type="text" 
+                  name='email'
                   placeholder='email address' 
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -121,7 +123,8 @@ const Edit = () => {
               <div className='form-group'>
                 <MdPhone className='icon' />
                 <input 
-                  type="number" 
+                  type="text" 
+                  name='number'
                   placeholder='phone number' 
                   value={number}
                   onChange={(e) => setNumber(e.target.value)}
