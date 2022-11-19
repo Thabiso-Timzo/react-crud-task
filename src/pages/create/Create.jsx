@@ -2,8 +2,6 @@ import React, { useState }  from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
-import { MdEmail, MdPhone } from 'react-icons/md'
-import { BsPersonFill } from 'react-icons/bs'
 
 import './Create.css'
 import { 
@@ -82,37 +80,44 @@ const Create = () => {
         </div>
         <form>
           <div className='form-group'>
-            <BsPersonFill className='icon' />
+          <label for='name'>Name:</label>
             <input 
               type="text" 
               name='name'
+              id='name'
               placeholder='name'
               value={name}
               onChange={(e) => setName(e.target.value)}
              />
           </div>
           <div className='form-group'>
-            <MdEmail className='icon' />
+            <label for='email'>Email:</label>
             <input 
               type="text"
               name='email' 
+              id='email'
               placeholder='email address' 
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className='form-group'>
-            <MdPhone className='icon' />
+            <label for='number'>Number:</label>
             <input
               type="text" 
               name='number'
+              id='number'
               placeholder='phone number '
               value={number}
               onChange={(e) => setNumber(e.target.value)}
              />
           </div>
           <div className="btn">
-            <button className='create' onClick={handleSubmit}>Create</button>
+            <button 
+              className='create' 
+              onClick={handleSubmit}
+              disabled={email === ''}
+            >Create</button>
             <button className='cancel' onClick={home}>Cancel</button>
           </div>
         </form>
