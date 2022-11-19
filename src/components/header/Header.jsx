@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <div className='header-container'>
       <div className="navigation-bar">
-        <button onClick={create}>Add a product</button>
+        <button onClick={create}>Insert</button>
       </div>
     </div>
   )
