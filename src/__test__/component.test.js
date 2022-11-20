@@ -20,7 +20,6 @@ const test_component = (component) => render(
     </Provider>
 )
 
- 
 test('handleSubmit function submits the form when user click Create', () => {
     test_component(<Create />)
         expect(screen.getByText('Create')).toBeInTheDocument()
@@ -36,7 +35,7 @@ test('handleSubmit function submits the form when user click Create', () => {
         expect(screen.getByText('Insert')).toBeInTheDocument()
 })
 
-test('handleDelete function deletes a contact when user clicks on elete', () => {
+test('handleDelete function deletes a contact when user clicks on delete', () => {
     test_component(<Contact />)
         expect(screen.getByText('Delete')).toBeInTheDocument()
 })
