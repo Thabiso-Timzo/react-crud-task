@@ -25,12 +25,7 @@ test('handleSubmit function submits the form when user click Create', () => {
         expect(screen.getByText('Create')).toBeInTheDocument()
 })
 
-test('handleSubmit function submits the form when user click Create', () => {
-    test_component(<Header />)
-        expect(screen.getByText('Insert')).toBeInTheDocument()
-})
-
-test('handleSubmit function submits the form when user click Create', () => {
+test('handleSubmit function submits the form when user clicks Insert', () => {
     test_component(<Header />)
         expect(screen.getByText('Insert')).toBeInTheDocument()
 })
