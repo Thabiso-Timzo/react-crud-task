@@ -116,7 +116,7 @@ const Create = () => {
             <button 
               className='create' 
               onClick={handleSubmit}
-              disabled={email === ''}
+              disabled={!name || !email || !number}
             >Create</button>
             <button className='cancel' onClick={home}>Cancel</button>
           </div>
