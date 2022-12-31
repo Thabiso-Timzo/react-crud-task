@@ -135,7 +135,7 @@ const Edit = () => {
                 <button 
                   className='create' 
                   onClick={handleSubmit}
-                  disabled={email === ''}
+                  disabled={!name || !email || !number}
                 >Edit</button>
                 <button className='cancel' onClick={home}>Cancel</button>
               </div>
